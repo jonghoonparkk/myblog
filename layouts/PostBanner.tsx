@@ -39,12 +39,13 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
               <PageTitle>{title}</PageTitle>
             </div>
           </div>
-          <div className="dark:prose-invert max-w-none py-4 prose">{children}</div>
-          {siteMetadata.comments && (
-            <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300" id="comment">
-              <Comments slug={slug} />
-            </div>
-          )}
+          <div className="prose max-w-none py-4">{children}</div>
+{siteMetadata.comments && (
+  <div className="text-gray-700 dark:text-gray-300 pb-6 pt-6 text-center" id="comment">
+    <Comments slug={slug} />
+  </div>
+)}
+
           <footer>
             <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
               {prev && prev.path && (
