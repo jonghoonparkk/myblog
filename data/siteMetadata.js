@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: '인공지능학회 HYAI',
   author: 'jhpark',
-  headerTitle: '인공지능학회 HYAI Blog',
+  headerTitle: '인공지능학회 HYAI',
   description: '한양대 ERICA 인공지능학회 HYAI',
   language: 'en-us',
   theme: 'system', // system, dark or light
