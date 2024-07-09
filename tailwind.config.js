@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['AppleSDGothicNeo', ...fontFamily.sans],
+        gasoek: ['GasoekOne', 'sans-serif'],
       },
       colors: {
         primary: colors.pink,
@@ -67,5 +68,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [],
 }
