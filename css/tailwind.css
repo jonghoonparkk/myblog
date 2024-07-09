@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'AppleSDGothicNeo';
+  src: url('/fonts/AppleSDGothicNeoB.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoEB.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoH.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoL.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoM.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoR.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoSB.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoT.ttf') format('ttf'),
+       url('/fonts/AppleSDGothicNeoUL.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .task-list-item::before {
   @apply hidden;
 }
