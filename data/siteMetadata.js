@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: '인공지능학회 HYAI',
+  title: '<span class="title-font">인공지능학회 HYAI</span>',
   author: 'jhpark',
   headerTitle: '인공지능학회 HYAI',
   description: '한양대 ERICA 인공지능학회 HYAI',
