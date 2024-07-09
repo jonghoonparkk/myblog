@@ -22,6 +22,30 @@
 }
 
 
+@font-face {
+  font-family: 'DoHyeon';
+  src: url('/fonts/BMDOHYEON_ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GasoekOne';
+  src: url('/fonts/GasoekOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Custom class for the title font */
+.title-font {
+  @apply font-gasoekOne;
+}
+
+/* Custom class for the Gasoek One font */
+.doHyeon-font {
+  @apply font-doHyeon;
+}
+
 .task-list-item::before {
   @apply hidden;
 }
