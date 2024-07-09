@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.title-font {
-  @apply font-gasoekOne;
-}
-
 @font-face {
   font-family: 'AppleSDGothicNeo';
   src: url('/fonts/AppleSDGothicNeoB.ttf') format('ttf'),

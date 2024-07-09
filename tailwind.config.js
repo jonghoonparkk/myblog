@@ -23,9 +23,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ['AppleSDGothicNeo', ...fontFamily.sans],
-        doHyeon: ['var(--font-do-hyeon)', 'sans-serif'], // Do Hyeon 폰트 추가
-        gasoekOne: ['var(--font-gasoek-one)', 'sans-serif'], // Gasoek One 폰트 추가
-        spaceGrotesk: ['var(--font-space-grotesk)', 'sans-serif'],
       },
       colors: {
         primary: colors.pink,
