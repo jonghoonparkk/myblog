@@ -20,17 +20,11 @@ export default function BlogPage() {
   }
 
   return (
-<>
-      {/* 수정된 부분: 제목에 title-font 클래스 적용 */}
-      <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-        <span className="title-font">All Posts</span>
-      </h1>
-      <ListLayout
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="" // 수정된 부분: title 속성을 빈 문자열로 설정
-      />
-    </>
+    <ListLayout
+      posts={posts}
+      initialDisplayPosts={initialDisplayPosts}
+      pagination={pagination}
+      title="All Posts"
+    />
   )
 }
