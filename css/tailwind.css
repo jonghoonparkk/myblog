@@ -17,13 +17,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'GasoekOne';
-  src: url('/fonts/GasoekOne-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 .task-list-item::before {
   @apply hidden;
