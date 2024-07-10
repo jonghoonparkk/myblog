@@ -24,6 +24,9 @@ module.exports = {
       fontFamily: {
         sans: ['AppleSDGothicNeo', ...fontFamily.sans],
       },
+      fontWeight: {
+        extrabold: '900', // 원하는 weight 값을 여기에 입력하세요
+      },
       colors: {
         primary: colors.pink,
         gray: colors.gray,

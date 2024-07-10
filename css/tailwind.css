@@ -17,6 +17,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GasoekOne';
+  src: url('/fonts/GasoekOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .task-list-item::before {
   @apply hidden;
@@ -64,4 +70,9 @@ input:-webkit-autofill:focus {
 .linkicon {
   display: inline-block;
   vertical-align: middle;
+}
+/* Extrabold 클래스 정의 */
+.extrabold {
+  @apply font-extrabold;
+  font-family: 'GaseokOne', sans-serif;
 }
