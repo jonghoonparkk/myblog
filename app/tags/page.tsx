@@ -26,6 +26,7 @@ export default async function Page() {
               return (
                 <div key={t} className="mb-2 mr-5 mt-2">
                   <Tag
+                    className="text-2xl" 
                     text={t} />
                   <Link
                     href={`/tags/${slug(t)}`}
