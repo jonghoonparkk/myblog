@@ -34,10 +34,9 @@ module.exports = {
     ],
     'react/prop-types': 0,
     '@typescript-eslint/no-unused-vars': 0,
-    'react/no-unescaped-entities': 'off', // 규칙 비활성화
+    'react/no-unescaped-entities': 0,
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
-    '@next/next/no-page-custom-font': 'off' // 규칙 비활성화
   },
 }
