@@ -1,4 +1,4 @@
-import Link from '@/components/Link' //중간최종
+import Link from '@/components/Link' //중간
 import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
 import tagData from 'app/tag-data.json'
