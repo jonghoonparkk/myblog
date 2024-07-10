@@ -23,6 +23,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['AppleSDGothicNeo', ...fontFamily.sans],
+        gaseokone: ['GaseokOne', 'sans-serif'], // GaseokOne 폰트 추가
+   
       },
       fontWeight: {
         extrabold: '900', // 원하는 weight 값을 여기에 입력하세요
