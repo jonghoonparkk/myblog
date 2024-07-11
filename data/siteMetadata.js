@@ -1,25 +1,25 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: '인공지능학회 HYAI',
-  author: 'jhpark',
+  author: '',
   headerTitle: '인공지능학회 HYAI',
   description: '한양대 ERICA 인공지능학회 HYAI',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://https://hyai.vercel.app/',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: '',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'hoon765@hanyang.ac.kr',
   github: 'https://github.com/jonghoonparkk',
-  x: 'https://twitter.com/x',
+  //x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  instagram: 'https://www.instagram.com/hanyang.ai',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
