@@ -1,3 +1,6 @@
+// pages/tags/page.tsx
+"use client"; // 클라이언트 컴포넌트로 선언
+
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
@@ -8,7 +11,7 @@ import { useEffect, useState } from 'react' // 랜덤 각도를 설정하기 위
 
 export const metadata = genPageMetadata({ title: 'Tags', description: 'Things I blog about' })
 
-export default async function Page() {
+export default function Page() {
   const [angle, setAngle] = useState(-45) // 각도를 설정하기 위한 상태 추가
 
   useEffect(() => {
