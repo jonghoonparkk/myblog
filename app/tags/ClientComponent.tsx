@@ -39,7 +39,7 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
                 <Tag text={t} />
                 <Link
                   href={`/tags/${slug(t)}`}
-                  className="-ml-2 text-lg font-semibold uppercase text-gray-100 dark:text-gray-100"
+                  className="-ml-2 text-lg font-thin uppercase text-black dark:text-white"
                   aria-label={`View posts tagged ${t}`}
                 >
                   {` (${tagCounts[t]})`}

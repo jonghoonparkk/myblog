@@ -70,6 +70,7 @@ module.exports = {
             },
             '.icon': {
               filter: 'invert(100%)',
+              '@apply invert-0 dark:invert': {},
             },
           },
         },
