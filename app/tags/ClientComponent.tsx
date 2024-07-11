@@ -36,10 +36,7 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
           {sortedTags.map((t) => {
             return (
               <div key={t} className="mb-2 mr-5 mt-2">
-                <Tag 
-                text={t}
-                className="text-white"
-                />
+                <Tag text={t} className="text-white"/>
                 <Link
                   href={`/tags/${slug(t)}`}
                   className="-ml-2 text-lg font-thin uppercase text-white"
