@@ -8,10 +8,10 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header 
-        className="flex items-center justify-between py-10 font-thin"
-        style={{ colorScheme: 'light dark' }}
-      >
+    <header
+      className="flex items-center justify-between py-10 font-thin"
+      style={{ colorScheme: 'light dark' }}
+    >
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
