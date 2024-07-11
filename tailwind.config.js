@@ -22,7 +22,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['AppleSDGothicNeo', ...fontFamily.sans],
+        sans: ['Pretendard', ...fontFamily.sans],
+        applesd: ['AppleSDGothicNeo', 'sans-serif'],
         gaseokone: ['GaseokOne', 'sans-serif'], // GaseokOne 폰트 추가
    
       },
