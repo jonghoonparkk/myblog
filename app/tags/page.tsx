@@ -1,4 +1,3 @@
-// app/tags/page.tsx
 import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 import ClientComponent from './ClientComponent' // 클라이언트 컴포넌트 임포트
@@ -10,5 +9,5 @@ export default async function Page() {
   const tagKeys = Object.keys(tagCounts)
   const sortedTags = tagKeys.sort((a, b) => tagCounts[b] - tagCounts[a])
 
-  return <ClientComponent sortedTags={sortedTags} tagCounts={tagCounts} />
+  return <ClientComponent sortedTags={sortedTags} tagCounts={tagCounts} /> // 클라이언트 컴포넌트 사용
 }
