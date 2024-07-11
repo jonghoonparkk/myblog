@@ -1,8 +1,8 @@
 /* css/Home.module.css */
 .background {
     background: linear-gradient(-45deg, #AC9CDF, #D194BA, #DFA0A6, #E4B898);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    background-size: 300% 300%;
+    animation: gradient 3s ease infinite;
     height: 100vh;
   }
   

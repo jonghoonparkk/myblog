@@ -1,19 +1,35 @@
-import Link from '@/components/Link' //중간
+import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import { slug } from 'github-slugger'
 import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 import styles from '../../css/Home.module.css'
+import { useEffect, useState } from 'react' // 랜덤 각도를 설정하기 위해 useState와 useEffect를 추가
 
 export const metadata = genPageMetadata({ title: 'Tags', description: 'Things I blog about' })
 
 export default async function Page() {
+  const [angle, setAngle] = useState(-45) // 각도를 설정하기 위한 상태 추가
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAngle(Math.floor(Math.random() * 360)) // 각도를 0에서 359 사이의 랜덤한 값으로 설정
+    }, 3000) // 3초마다 각도를 변경
+
+    return () => clearInterval(interval)
+  }, [])
+
   const tagCounts = tagData as Record<string, number>
-  const tagKeys = Objtect.keys(tagCounts)
+  const tagKeys = Object.keys(tagCounts)
   const sortedTags = tagKeys.sort((a, b) => tagCounts[b] - tagCounts[a])
   return (
     <>
-      <div className={styles.background}>
+      <div
+        className={styles.background}
+        style={{
+          background: `linear-gradient(${angle}deg, #AC9CDF, #D194BA, #DFA0A6, #E4B898)`, // 랜덤 각도를 적용
+        }}
+      >
         <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
           <div className="space-x-2 pb-8 pt-6 md:space-y-5">
             <h1 className="text-2xl font-thin leading-9 tracking-tight text-gray-100 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
