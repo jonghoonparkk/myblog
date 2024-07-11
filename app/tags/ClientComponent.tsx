@@ -1,4 +1,3 @@
-// app/tags/ClientComponent.tsx
 'use client' // 클라이언트 컴포넌트로 선언
 
 import { useEffect, useState } from 'react'
@@ -36,7 +35,7 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
           {sortedTags.map((t) => {
             return (
               <div key={t} className="mb-2 mr-5 mt-2">
-                <Tag text={t} className="text-white"/>
+                <Tag text={t} className="text-white" />
                 <Link
                   href={`/tags/${slug(t)}`}
                   className="-ml-2 text-lg font-thin uppercase text-white"
