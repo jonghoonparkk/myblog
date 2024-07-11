@@ -1,11 +1,11 @@
 // app/tags/ClientComponent.tsx
 'use client'; // 클라이언트 컴포넌트로 선언
 
-import { useEffect, useState } from 'react';
-import styles from '../../css/Home.module.css';
-import Link from '@/components/Link';
-import Tag from '@/components/Tag';
-import { slug } from 'github-slugger';
+import { useEffect, useState } from 'react'
+import styles from '../../css/Home.module.css'
+import Link from '@/components/Link'
+import Tag from '@/components/Tag'
+import { slug } from 'github-slugger'
 
 export default function ClientComponent({ sortedTags, tagCounts }) {
   const [angle, setAngle] = useState(-45); // 각도를 설정하기 위한 상태 추가
@@ -15,8 +15,8 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
       setAngle(Math.floor(Math.random() * 360)); // 각도를 0에서 359 사이의 랜덤한 값으로 설정
     }, 3000); // 3초마다 각도를 변경
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div
@@ -45,10 +45,10 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
                   {` (${tagCounts[t]})`}
                 </Link>
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </div>
-  );
+  )
 }
