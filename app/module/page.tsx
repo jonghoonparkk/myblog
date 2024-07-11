@@ -12,9 +12,7 @@ export default function Modules() {
           <h1 className="text-2xl font-thin leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Events
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            모듈
-          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">모듈</p>
         </div>
         <div className="container py-12">
           <div className="-m-4 flex flex-wrap">
