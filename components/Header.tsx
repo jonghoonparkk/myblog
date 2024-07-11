@@ -8,41 +8,39 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header 
-      className="flex items-center justify-between py-10 font-thin"  
-        style={{ colorScheme: 'light dark' }}>
-          <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo className="icon" />
-                </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-xl font-thin sm:block">
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
+    <header className="flex items-center justify-between py-10 font-thin">
+      <div>
+        <Link href="/" aria-label={siteMetadata.headerTitle}>
+          <div className="flex items-center justify-between">
+            <div className="mr-3">
+              <Logo className="icon" />
+            </div>
+            {typeof siteMetadata.headerTitle === 'string' ? (
+              <div className="hidden h-6 text-xl font-thin sm:block">
+                {siteMetadata.headerTitle}
               </div>
-            </Link>
+            ) : (
+              siteMetadata.headerTitle
+            )}
           </div>
-        <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-          {headerNavLinks
-            .filter((link) => link.href !== '/')
-            .map((link) => (
-              <Link
-                key={link.title}
-                href={link.href}
-                className="hidden font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400 sm:block"
-              >
-                {link.title}
-              </Link>
-            ))}
-          <SearchButton />
-          <ThemeSwitch />
-          <MobileNav />
-        </div>
+        </Link>
+      </div>
+      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+        {headerNavLinks
+          .filter((link) => link.href !== '/')
+          .map((link) => (
+            <Link
+              key={link.title}
+              href={link.href}
+              className="hidden font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400 sm:block"
+            >
+              {link.title}
+            </Link>
+          ))}
+        <SearchButton />
+        <ThemeSwitch />
+        <MobileNav />
+      </div>
     </header>
   )
 }

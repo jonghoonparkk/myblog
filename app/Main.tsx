@@ -45,7 +45,7 @@ export default function Home({ posts }) {
                           </h2>
                           <div className="flex flex-wrap">
                             {tags.map((tag) => (
-                              <Tag key={tag} text={tag} className="text-primary-500 dark:text-primary-400" />
+                              <Tag key={tag} text={tag} className="text-primary-500 dark:text-gray-100" />
                             ))}
                           </div>
                         </div>
