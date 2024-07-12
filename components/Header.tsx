@@ -9,7 +9,7 @@ import SearchButton from './SearchButton'
 const Header = () => {
   return (
     <header
-      className="flex items-center justify-between py-10 font-thin"
+      className="flex items-center justify-between py-10 font-extralight"
       style={{ colorScheme: 'light dark' }}
     >
       <div>
@@ -19,7 +19,7 @@ const Header = () => {
               <Logo className="icon dark:invert" />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-xl font-thin sm:block">
+              <div className="hidden h-6 text-xl font-extralight sm:block">
                 {siteMetadata.headerTitle}
               </div>
             ) : (

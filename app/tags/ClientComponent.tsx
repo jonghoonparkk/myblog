@@ -26,7 +26,7 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
     >
       <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
         <div className="space-x-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-thin leading-9 tracking-tight text-white sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
+          <h1 className="text-2xl font-extralight leading-9 tracking-tight text-white sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
             Tags
           </h1>
         </div>
@@ -38,7 +38,7 @@ export default function ClientComponent({ sortedTags, tagCounts }) {
                 <Tag text={t} className="text-white" />
                 <Link
                   href={`/tags/${slug(t)}`}
-                  className="-ml-2 text-lg font-thin uppercase text-white"
+                  className="-ml-2 text-lg font-extralight uppercase text-white"
                   aria-label={`View posts tagged ${t}`}
                 >
                   {` (${tagCounts[t]})`}
