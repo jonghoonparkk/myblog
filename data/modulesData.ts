@@ -27,13 +27,13 @@ const modulesData: Module[] = [
   {
     title: '👻머신러닝 모듈👻',
     description: `머신러닝 모듈을 통해 현대 데이터 과학의 핵심 기술인 머신러닝을 배워봅시다.`,
-    imgSrc: '/static/images/module/ai/5.png',
+    imgSrc: '/static/images/module/ai/4.png',
     href: 'https://hyai.vercel.app/blog/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%20%EB%AA%A8%EB%93%88',
   },
   {
     title: '🧠딥러닝 모듈🧠',
     description: `딥러닝의 기본 개념과 원리를 배워봅시다. 딥러닝은 인공지능의 한 분야로, 인공 신경망을 기반으로 하는 알고리즘을 사용하여 데이터를 학습하고 예측하는 기술입니다.`,
-    imgSrc: '/static/images/module/ai/2.png',
+    imgSrc: '/static/images/module/ai/6.png',
     href: 'https://hyai.vercel.app/blog/%EB%94%A5%EB%9F%AC%EB%8B%9D%20%EB%AA%A8%EB%93%88',
   },
   
