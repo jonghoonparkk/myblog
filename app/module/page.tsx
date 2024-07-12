@@ -13,7 +13,7 @@ export default function Modules() {
             Module
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            총 5가지의 모듈 중 자신의 단계에 맞게 선택해서 하나씩 정복해보자! 👻
+            👻총 5가지의 모듈 중 자신의 단계에 맞게 선택해서 하나씩 정복해보자!👻
           </p>
         </div>
         <div className="container py-12">
