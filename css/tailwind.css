@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: 'GasoekOne';
-  src: url('/fonts/GasoekOne-Regular.ttf') format('ttf');
+  src: url('/src/assets/fonts/GasoekOne-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
