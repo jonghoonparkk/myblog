@@ -19,6 +19,7 @@ const siteMetadata = {
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
+  notion: 'https://hanyangai.notion.site/',
   instagram: 'https://www.instagram.com/hanyang.ai',
   locale: 'en-US',
   analytics: {
