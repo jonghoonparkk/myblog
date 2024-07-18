@@ -9,6 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://https://hyai.vercel.app/',
   siteRepo: '',
   siteLogo: '/static/images/logo.png',
+  image: '/static/images/twitter-card.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'hoon765@hanyang.ac.kr',
