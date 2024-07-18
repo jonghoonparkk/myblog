@@ -1,4 +1,4 @@
-# https://myblog-psi-woad.vercel.app/
+# [👻HYAI](https://hyai.vercel.app/)
 
 
 ![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
