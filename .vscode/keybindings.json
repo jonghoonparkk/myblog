@@ -1,0 +1,23 @@
+[
+    {
+      "key": "shift+ctrl+v",
+      "command": "-notebook.cell.pasteAbove",
+      "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+      "key": "shift+ctrl+v",
+      "command": "-markdown.showPreview",
+      "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+      "key": "shift+ctrl+v",
+      "command": "-markdown.extension.closePreview",
+      "when": "markdownPreviewFocus"
+    },
+    {
+      "key": "shift+ctrl+v",
+      "command": "extension.pasteImage",
+      "when": "editorTextFocus"
+    }
+  ]
+  
