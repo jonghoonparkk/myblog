@@ -13,7 +13,6 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
-import { extractFirstImage } from '@/scripts/extractFirstImage' // extractFirstImage 함수 임포트
 
 const defaultLayout = 'PostLayout'
 const layouts = {
@@ -22,7 +21,6 @@ const layouts = {
   PostBanner,
 }
 
-// generateMetadata 함수 정의 및 수정
 export async function generateMetadata({
   params,
 }: {
@@ -46,13 +44,6 @@ export async function generateMetadata({
   if (post.images) {
     imageList = typeof post.images === 'string' ? [post.images] : post.images
   }
-
-  // MDX 콘텐츠에서 첫 번째 이미지를 추출
-  const firstImage = await extractFirstImage(post.body.raw)
-  if (firstImage) {
-    imageList = [firstImage, ...imageList]
-  }
-
   const ogImages = imageList.map((img) => {
     return {
       url: img.includes('http') ? img : siteMetadata.siteUrl + img,
