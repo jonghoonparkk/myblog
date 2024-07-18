@@ -9,7 +9,11 @@ const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnch
 
   if (isInternalLink) {
     // 내부 링크: next/link를 사용하여 현재 탭에서 열림
-    return <Link href={href} {...rest}><a {...rest} /></Link>
+    return (
+      <Link href={href} {...rest}>
+        <a {...rest} />
+      </Link>
+    )
   }
 
   if (isAnchorLink) {
