@@ -9,9 +9,11 @@ import {
   Mastodon,
   Threads,
   Instagram,
+  Notion,
 } from './icons'
 
 const components = {
+  notion: Notion,
   mail: Mail,
   github: Github,
   facebook: Facebook,
