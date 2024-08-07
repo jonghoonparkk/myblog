@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'hoon765@hanyang.ac.kr',
-  github: 'https://github.com/jonghoonparkk',
+  github: 'https://github.com',
   //x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
